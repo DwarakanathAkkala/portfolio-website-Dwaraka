@@ -709,6 +709,8 @@ skills_subtitle {
 /* PORTFOLIO Styling */
 .portfolio_container {
   overflow: initial;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .portfolio_content {
@@ -732,4 +734,29 @@ skills_subtitle {
 
 .portfolio_button:hover .button_icon {
   transform: translateX(0.25rem);
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  content: '';
+}
+
+.swiper_portfolio_icon {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: -0.2rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--main-color);
+}
+
+.swiper-button-prev, .swiper-button-prev, .swiper-pagination-bullet {
+  outline: none;
 }
