@@ -384,3 +384,120 @@ img {
   display: flex;
   justify-content: center;
 }
+
+
+
+/* Skills */
+.skills_container {
+  row-gap: 0;
+}
+
+.skills_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.skills_icon, .skills_arrow {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.skills_icon {
+  margin-right: var(--mb-0-75);
+}
+
+.skills_title {
+  font-size: var(--h3-font-size);
+}
+
+skills_subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.skills_arrow {
+  margin-left: auto;
+  transition: 0.6s;
+}
+
+.skills_list {
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+
+.skills_titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+
+.skills_name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skills_bar, .skills_percentage {
+  height: 5px;
+  border-radius: 0.25rem;
+}
+
+.skills_bar {
+  background-color: var(--main-color-lighter);
+}
+
+.skills_percentage {
+  display: block;
+  background-color: var(--main-color);
+}
+
+.skills_html {
+  width: 90%;
+}
+
+.skills_css {
+  width: 80%;
+}
+
+.skills_js {
+  width: 60%;
+}
+
+.skills_react {
+  width: 80%;
+}
+
+.skills_mongo {
+  width: 55%;
+}
+
+.skills_node {
+  width: 75%;
+}
+
+.skills_express {
+  width: 40%;
+}
+
+.skills_dotnet {
+  width: 30%;
+}
+
+.skills_product {
+  width: 90%;
+}
+
+.skills_trouble {
+  width: 80%;
+}
+
+.skills_typing {
+  width: 90%;
+}
+
+.skills_communication {
+  width: 85%;
+}
+
+/* Hidden Skills at Start */
