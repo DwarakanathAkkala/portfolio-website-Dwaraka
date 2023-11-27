@@ -333,6 +333,11 @@ img {
   transition: 0.5s;
 }
 
+.button_white {
+  background-color: #FFF;
+  color: var(--main-color);
+}
+
 .button_flex {
   display: inline-flex;
   align-items: center;
