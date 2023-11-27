@@ -8,8 +8,8 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
         <link rel="icon" href="/assets/img/blob.svg">
         
-        <!--==================== SWIPER CSS ====================-->
-        <!-- <link rel="stylesheet" href=""> -->
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         
         <!-- Main CSS Styling -->
         <link rel="stylesheet" href="/assets/css/styles.css">
@@ -687,50 +687,61 @@
                 <h2 class="section_title">Portfolio</h2>
                 <span class="section_subTitle">Most recent Work</span>
 
-                <div class="portfolio_container container">
-                    <div>
+                <div class="swiper">
+                    <div class="portfolio_container container swiper-container">
+                        
+                        <div class="swiper-wrapper">
 
-                        <!-- Portfolio 1 -->
-                        <div class="portifolio_content grid">
-                            <img src="assets/img/portfolio1.jpg" alt="Portfolio 1" class="portfolio_img">
+                            <!-- Portfolio 1 -->
+                            <div class="portifolio_content grid swiper-slide">
+                                <img src="assets/img/portfolio1.jpg" alt="Portfolio 1" class="portfolio_img">
 
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">Portfolio 1</h3>
-                                <p class="portfolio_description">Website adaptable to all devices, with UI Components and animated interactions</p>
-                                <a href="#" class="button button_flex button_small portfolio_button">
-                                   Demo <i class="uil uil-arrow-right button_icon"></i>
-                                </a>
+                                <div class="portfolio_data">
+                                    <h3 class="portfolio_title">Portfolio 1</h3>
+                                    <p class="portfolio_description">Website adaptable to all devices, with UI Components and animated interactions</p>
+                                    <a href="#" class="button button_flex button_small portfolio_button">
+                                       Demo <i class="uil uil-arrow-right button_icon"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <!-- Portfolio 2 -->
+                            <div class="portifolio_content grid swiper-slide">
+                                <img src="assets/img/portfolio2.jpg" alt="Portfolio 2" class="portfolio_img">
+
+                                <div class="portfolio_data">
+                                    <h3 class="portfolio_title">Portfolio 2</h3>
+                                    <p class="portfolio_description">Website adaptable to all devices, with UI Components and animated interactions</p>
+                                    <a href="#" class="button button_flex button_small portfolio_button">
+                                       Demo <i class="uil uil-arrow-right button_icon"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <!-- Portfolio 3 -->
+                            <div class="portifolio_content grid swiper-slide">
+                                <img src="assets/img/portfolio3.jpg" alt="Portfolio 3" class="portfolio_img">
+
+                                <div class="portfolio_data">
+                                    <h3 class="portfolio_title">Portfolio 3</h3>
+                                    <p class="portfolio_description">Website adaptable to all devices, with UI Components and animated interactions</p>
+                                    <a href="#" class="button button_flex button_small portfolio_button">
+                                       Demo <i class="uil uil-arrow-right button_icon"></i>
+                                    </a>
+                                </div>
+
                             </div>
 
                         </div>
 
-                        <!-- Portfolio 2 -->
-                        <div class="portifolio_content grid">
-                            <img src="assets/img/portfolio2.jpg" alt="Portfolio 2" class="portfolio_img">
+                        <!-- Swiper Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
 
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">Portfolio 2</h3>
-                                <p class="portfolio_description">Website adaptable to all devices, with UI Components and animated interactions</p>
-                                <a href="#" class="button button_flex button_small portfolio_button">
-                                   Demo <i class="uil uil-arrow-right button_icon"></i>
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <!-- Portfolio 3 -->
-                        <div class="portifolio_content grid">
-                            <img src="assets/img/portfolio3.jpg" alt="Portfolio 3" class="portfolio_img">
-
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">Portfolio 3</h3>
-                                <p class="portfolio_description">Website adaptable to all devices, with UI Components and animated interactions</p>
-                                <a href="#" class="button button_flex button_small portfolio_button">
-                                   Demo <i class="uil uil-arrow-right button_icon"></i>
-                                </a>
-                            </div>
-
-                        </div>
+                        <!-- Swiper Pagination -->
+                        <div class="swiper-pagination"></div>
 
                     </div>
                 </div>
@@ -747,8 +758,8 @@
         <!--==================== SCROLL TOP ====================-->
         
 
-        <!--==================== SWIPER JS ====================-->
-        <!-- <script src=""></script> -->
+        <!-- Swiper JS -->
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!-- Main Javascript File -->
         <script src="/assets/js/main.js"></script>
