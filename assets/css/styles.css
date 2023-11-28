@@ -836,3 +836,7 @@ skills_subtitle {
   color: var(--main-color);
 }
 
+.swiper-container .swiper_pagination_testimonial {
+  bottom: 0;
+}
+
