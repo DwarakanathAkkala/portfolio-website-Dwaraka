@@ -176,4 +176,36 @@ function scrollTop() {
 
 window.addEventListener('scroll', scrollTop);
 
-/*==================== DARK LIGHT THEME ====================*/ 
+
+
+// Dark or Light Theme //
+
+const themeButton = document.getElementById('theme_button');
+const darkTheme = 'dark_theme';
+const iconTheme = 'uil-sun';
+
+// Local Storage - Prev. selected theme
+const selectedTheme = localStorage.getItem('selected_theme');
+const selectedIcon = localStorage.getItem('selected_icon');
+
+// Obtaining current theme by calidating the dark_theme class
+const getCurrTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+const getCurrIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun';
+
+// Validating user by previous preference (if any)
+if (selectedTheme) {
+    // Activate the preferred theme which was stored in localStorage
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+    themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme);
+}
+
+// Activate or deactivate theme manually with the button
+themeButton.addEventListener('click', () => {
+    // Add or remove the dark theme or icon theme
+    document.body.classList.toggle(darkTheme);
+    themeButton.classList.toggle(iconTheme);
+
+    // Save current icon and theme of user selected
+    localStorage.setItem('selected_theme', getCurrTheme());
+    localStorage.setItem('selected_icon', getCurrIcon());
+});
