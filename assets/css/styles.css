@@ -766,8 +766,6 @@ skills_subtitle {
 /* PORTFOLIO Styling */
 .portfolio_container {
   overflow: initial;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
 }
 
 .portfolio_content {
