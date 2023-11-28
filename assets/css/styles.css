@@ -1113,7 +1113,7 @@ skills_subtitle {
 
 
 /* Medium Devices */
-@media screen and (min-width:568px) {
+@media screen and (min-width: 568px) {
   .home_content {
     grid-template-columns: max-content 1fr 1fr;
   }
@@ -1149,6 +1149,12 @@ skills_subtitle {
   .qualification_data:nth-child(even) {
     text-align: start;
   }
+
+  .footer_container {
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+  }
+
+}
 
 
 /* Large Devices */
