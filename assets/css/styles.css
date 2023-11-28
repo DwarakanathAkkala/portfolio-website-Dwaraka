@@ -1040,3 +1040,71 @@ skills_subtitle {
   background-color: var(--text-color-light);
 }
 
+
+/* MEDIA QUERIES */
+/* Small Devices */
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .nav_menu {
+    padding: 2rem 0.25rem 4rem;
+  }
+
+  .nav_list {
+    column-gap: 0;
+  }
+
+  .home_content {
+    grid-template-columns: 0.25fr 3fr;
+  }
+  
+  .skills_title {
+    font-size: var(--normal-font-size);
+  }
+
+  .qualification_data {
+    gap: 0.5rem;
+  }
+
+  .services_container {
+    grid-template-columns: max-content;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .services_content {
+    padding-right: 3.5rem;
+  }
+
+  .services_modal {
+    padding: 0 0.5rem;
+  }
+
+  .portifolio_content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  /* Uncomment below code when Project Section image is used */
+  /* .project_img {
+    width: 200px;
+  } */
+
+  .testimonial_data, .testimonial_header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial_img {
+    margin-right: 0;
+    margin-bottom: var(--mb-0-25);
+  }
+
+  .testimonial_data, .testimonial_description {
+    text-align: center;
+  }
+
+}
