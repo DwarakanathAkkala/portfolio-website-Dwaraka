@@ -156,7 +156,6 @@ function scrollActive() {
 
 window.addEventListener('scroll', scrollActive);
 
-
 // Change Background Header
 function scrollHeader() {
     const nav = document.getElementById('header');
@@ -167,7 +166,14 @@ function scrollHeader() {
 
 window.addEventListener('scroll', scrollHeader);
 
-/*==================== SHOW SCROLL UP ====================*/
 
+// Show Scroll to Top
+function scrollTop() {
+    const scrollTop = document.getElementById('scroll_up');
+
+    if (this.scrollY >= 560) scrollTop.classList.add('show_scroll'); else scrollTop.classList.remove('show_scroll');
+}
+
+window.addEventListener('scroll', scrollTop);
 
 /*==================== DARK LIGHT THEME ====================*/ 

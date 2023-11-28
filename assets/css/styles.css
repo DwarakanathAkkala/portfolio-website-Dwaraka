@@ -958,3 +958,31 @@ skills_subtitle {
 .footer_title, .footer_subtitle, .footer_link, .footer_social, .footer_copy {
   color: #FFF;
 }
+
+
+/* SCROLL TO TOP Styling */
+ .scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: var(--main-color);
+  opacity: 0.8;
+  padding: 0 0.3rem;
+  border-radius: 0.4rem;
+  z-index: var(--z-tooltip);
+  transition: 0.6s;
+}
+
+.scrollup:hover {
+  background-color: var(--main-color-alt);
+}
+
+.scrollup_icon {
+  font-size: 1.5rem;
+  color: #FFF;
+}
+
+/* Show Scroll */
+.show_scroll {
+  bottom: 5rem;
+}
