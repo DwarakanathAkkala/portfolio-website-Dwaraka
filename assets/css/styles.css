@@ -1115,7 +1115,7 @@ skills_subtitle {
 
 
 /* Medium Devices */
-@media screen and (min-width:350px) and (max-width: 568px) {
+@media screen and (min-width:568px) {
   .home_content {
     grid-template-columns: max-content 1fr 1fr;
   }
