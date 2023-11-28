@@ -156,8 +156,16 @@ function scrollActive() {
 
 window.addEventListener('scroll', scrollActive);
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/
 
+// Change Background Header
+function scrollHeader() {
+    const nav = document.getElementById('header');
+    // console.log(this.scrollY)
+    // When the scroll os greater than 80 viewport height, add the scroll-header class.
+    if (this.scrollY >= 80) nav.classList.add('scroll_header'); else nav.classList.remove('scroll_header');
+}
+
+window.addEventListener('scroll', scrollHeader);
 
 /*==================== SHOW SCROLL UP ====================*/
 
