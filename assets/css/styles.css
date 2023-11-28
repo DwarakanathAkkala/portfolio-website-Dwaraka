@@ -1112,3 +1112,44 @@ skills_subtitle {
   }
 
 }
+
+
+/* Medium Devices */
+@media screen and (min-width:350px) and (max-width: 568px) {
+  .home_content {
+    grid-template-columns: max-content 1fr 1fr;
+  }
+
+  .home_data {
+    grid-column: initial;
+  }
+
+  .home_img {
+    order: 1;
+    justify-self: center;
+  }
+
+  /* Add .project_container class when project image is added */
+  .about_container, .skills_container, .portfolio_content, .contact_container, .footer_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .qualification_sections {
+    display: grid;
+    grid-template-columns: 0.6fr;
+    justify-content: center;
+  }
+
+  .qualification_content {
+    width: 75vw;
+  }
+
+  .qualification_data:nth-child(odd) {
+    text-align: end;
+  }
+
+  .qualification_data:nth-child(even) {
+    text-align: start;
+  }
+
+}
