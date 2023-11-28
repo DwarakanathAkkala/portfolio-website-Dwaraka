@@ -233,6 +233,11 @@ img {
   bottom: 0;
 }
 
+/* Active Link */
+.active_link {
+  color: var(--main-color);
+}
+
 
 /* Home Section Styling */
 .home_container {

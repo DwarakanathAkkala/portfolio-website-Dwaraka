@@ -133,8 +133,28 @@ let swiperTestimonial = new Swiper('.testimonial_container', {
     }
 });
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
+// Scroll Sections Active Link
+const sections = document.querySelectorAll('section[id]');
+
+function scrollActive() {
+    const scrollY = window.scrollY;
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        const sectionId = current.getAttribute('id');
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active_link');
+        }
+        else {
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active_link');
+        };
+    });
+};
+
+window.addEventListener('scroll', scrollActive);
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 
