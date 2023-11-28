@@ -1107,4 +1107,8 @@ skills_subtitle {
     text-align: center;
   }
 
+  .contact_subtitle {
+    font-size: var(--smaller-font-size);
+  }
+
 }
