@@ -378,6 +378,10 @@ img {
   color: var(--main-color);
 }
 
+.button_white:hover {
+  color: #FFF;
+}
+
 .button_flex {
   display: inline-flex;
   align-items: center;
