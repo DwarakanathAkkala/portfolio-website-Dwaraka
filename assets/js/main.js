@@ -56,6 +56,7 @@ skillsHeader.forEach((ele) => {
 const tabs = document.querySelectorAll('[data-target]');
 const tabContents = document.querySelectorAll('[data-content]');
 
+/* Handles the click event on qualification tabs and updates the active tab and its corresponding content. */
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
         const target = document.querySelector(tab.dataset.target);
@@ -84,6 +85,8 @@ let modal = function (modalClick) {
     modalViews[modalClick].classList.add('active_modal');
 }
 
+/* Adds the class 'active_modal' to the specified modal view, making it visible.
+ * @param {number} modalClick - The index of the modal view to be shown. */
 modalBtns.forEach((modalBtn, i) => {
     modalBtn.addEventListener('click', () => {
         modal(i);
@@ -137,6 +140,7 @@ let swiperTestimonial = new Swiper('.testimonial_container', {
 // Scroll Sections Active Link
 const sections = document.querySelectorAll('section[id]');
 
+/* Updates the active link in the navigation menu based on the current scroll position. */
 function scrollActive() {
     const scrollY = window.scrollY;
 
@@ -156,18 +160,25 @@ function scrollActive() {
 
 window.addEventListener('scroll', scrollActive);
 
-// Change Background Header
+/* Changes the background header of a webpage based on the scroll position. */
 function scrollHeader() {
     const nav = document.getElementById('header');
-    // console.log(this.scrollY)
-    // When the scroll os greater than 80 viewport height, add the scroll-header class.
-    if (this.scrollY >= 80) nav.classList.add('scroll_header'); else nav.classList.remove('scroll_header');
+    // When the scroll is greater than or equal to 80 viewport height, add the scroll-header class.
+    if (this.scrollY >= 80) {
+        nav.classList.add('scroll_header');
+    } else {
+        nav.classList.remove('scroll_header');
+    }
 }
-
 window.addEventListener('scroll', scrollHeader);
 
 
 // Show Scroll to Top
+/**
+ * Sets the visibility of a scroll-to-top button based on the user's scroll position.
+ * If the scroll position is greater than or equal to 560 pixels, the button is shown.
+ * Otherwise, the button is hidden.
+ */
 function scrollTop() {
     const scrollTop = document.getElementById('scroll_up');
 
@@ -179,7 +190,6 @@ window.addEventListener('scroll', scrollTop);
 
 
 // Dark or Light Theme //
-
 const themeButton = document.getElementById('theme_button');
 const darkTheme = 'dark_theme';
 const iconTheme = 'uil-sun';
