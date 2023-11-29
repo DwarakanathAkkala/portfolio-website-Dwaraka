@@ -1173,6 +1173,10 @@ skills_subtitle {
     font-size: 1.5rem;
   }
 
+  .footer_social {
+    margin-right: var(--mb-1);
+  }
+
 }
 
 /* Medium  Devices */
