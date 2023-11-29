@@ -1152,8 +1152,13 @@ skills_subtitle {
   .footer_container {
     grid-template-columns: 1.5fr 1.5fr 1fr;
   }
+  .scrollup {
+    right: 2rem;
+  }
 
-}
+  .scrollup_icon {
+    font-size: 1.5rem;
+  }
 
 }
 
@@ -1346,6 +1351,13 @@ skills_subtitle {
 
   .footer_copy {
     margin-top: 4.5rem;
+  }
+  .scrollup {
+    right: 2.5rem;
+  }
+
+  .scrollup_icon {
+    font-size: 2rem;
   }
 
 }
