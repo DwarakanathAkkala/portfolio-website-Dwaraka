@@ -159,6 +159,10 @@ img {
   text-align: center;
 }
 
+.header_alpha {
+  color: var(--main-color);
+}
+
 
 /* Layout */
 .container {
