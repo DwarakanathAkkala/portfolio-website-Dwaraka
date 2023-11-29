@@ -1130,6 +1130,14 @@ skills_subtitle {
     justify-self: center;
   }
 
+  .nav_logo {
+    font-size: var(--h2-font-size);
+  }
+  .change_theme, .toggle_icon {
+    font-size: 1.5rem;
+    margin-right: var(--mb-1-5);
+  }
+
   /* Add .project_container class when project image is added */
   .about_container, .skills_container, .portfolio_content, .contact_container, .footer_container {
     grid-template-columns: repeat(2, 1fr);
