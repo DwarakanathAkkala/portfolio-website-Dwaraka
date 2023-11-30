@@ -106,7 +106,8 @@ modalCloses.forEach((modalClose) => {
 // Portfolio Swiper
 let swiperPortfolio = new Swiper('.portfolio_container', {
     cssMode: true,
-    loop: true,
+    // Comment out below line when more prtfolios are added
+    // loop: true, 
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
@@ -220,6 +221,7 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected_icon', getCurrIcon());
 });
 
+//  Submit from Message Section
 document.getElementById('form').addEventListener('submit', function (e) {
     e.preventDefault();
     const params = {
@@ -235,4 +237,4 @@ document.getElementById('form').addEventListener('submit', function (e) {
     }, function (error) {
         alert("Error", error, " Please contact Dwaraka through Phone or email. Sorry for the inconvenience.");
     });
-})
+});
