@@ -219,3 +219,37 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected_theme', getCurrTheme());
     localStorage.setItem('selected_icon', getCurrIcon());
 });
+
+function sendMessage() {
+
+    if (checkInputs()) {
+        console.log("Valid Data")
+        let params = {
+            userName: document.getElementById('userName').value,
+            userEmail: document.getElementById('userEmail').value,
+            project: document.getElementById('project').value,
+            message: document.getElementById('message').value
+        };
+
+
+        emailjs.send('service_yh60t0i', 'template_5gnagvj', params).then((res) => {
+            if (res = 200) {
+                alert("Hey, Dwaraka Bot here. Message Sent to Dwaraka :-)");
+            }
+            else alert("Hey, Something went wrong. Please try contacting Dwaraka via Phone or email");
+        });
+    }
+}
+
+function checkInputs() {
+    const input = document.querySelectorAll('input');
+
+    for (let i = 0; i < input.length; i++) {
+        input[i].addEventListener('invalid', (e) => {
+            return false;
+        });
+    }
+}
+
+
+
