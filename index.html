@@ -880,6 +880,8 @@
                 <span class="section_subTitle">Get in touch</span>
 
                 <div class="contact_container container grid">
+
+                    <!-- Contact Info -->
                     <div>
                         
                         <div class="contact_information">
@@ -903,36 +905,36 @@
                     </div>
 
                     <!-- Contact Form -->
-                    <form action="" class="contact_form grid">
+                    <form class="contact_form grid">
                         <div class="contact_inputs grid">
 
                             <div class="contact_content">
-                                <label for="name" class="contact_label">Name</label>
-                                <input type="text" class="contact_input">
+                                <label for="userName" class="contact_label">Name</label>
+                                <input type="text" class="contact_input" id="userName" name="userName" required>
                             </div>
 
                             <div class="contact_content">
-                                <label for="email" class="contact_label">Email</label>
-                                <input type="email" class="contact_input">
+                                <label for="userEmail" class="contact_label">Email</label>
+                                <input type="email" class="contact_input" id="userEmail" name="userEmail" required>
                             </div>
 
                         </div>
 
                         <div class="contact_content">
                             <label for="project" class="contact_label">Project</label>
-                            <input type="text" class="contact_input">
+                            <input type="text" class="contact_input" id="project" name="project" required>
                         </div>
 
                         <div class="contact_content">
                             <label for="message" class="contact_label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                            <textarea cols="0" rows="7" class="contact_input" id="message" name="message" required></textarea>
                         </div>
 
                         <div>
-                            <a href="#" class="button button_flex">
-                                Send Message
-                                <i class="uil uil-message button_icon"></i>
-                            </a>
+                            <button type="submit" onclick="sendMessage()" class="button button_flex button_icon" id="messageBtn">
+                                Send Message &nbsp;
+                                <i class="uil uil-message "></i>
+                            </button>
                         </div>
 
                     </form>
