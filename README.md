@@ -2,7 +2,7 @@
 
 Responsive Mobile first Portfolio Website Using HTML, CSS &amp; JavaScript with Dark Theme
 
-![Design preview of the Website](./img/preview/desktop-preview.png)
+![Design preview of the Website](./assets/img/preview/desktop-preview.png)
 
 ## Welcome! 👋
 
