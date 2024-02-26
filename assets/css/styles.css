@@ -777,9 +777,10 @@ skills_subtitle {
 
 .portfolio_img {
   width: 265px;
-  height: auto;
+  height: 100%;
   border-radius: 0.5rem;
   justify-self: center;
+  border: 3px solid var(--main-color);
 }
 
 .portfolio_title {
